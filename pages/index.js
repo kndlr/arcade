@@ -14,7 +14,7 @@ export default function Home() {
                 <div className={styles.game}>
                     <img className={styles.icon} src="/icon/baseball.png"></img>
                     <span className={styles.title}>야구게임</span>
-                    <p classname={styles.description}>으갸갹</p>
+                    <p className={styles.description}>으갸갹</p>
                     <Link href="/baseball">
                         <a>
                             <button className={styles.link}>
@@ -26,7 +26,7 @@ export default function Home() {
                 <div className={styles.game}>
                     <DotsHorizontalIcon className={styles.icon} />
                     <span className={styles.title}>기다려</span>
-                    <p classname={styles.description}>아직 생각중</p>
+                    <p className={styles.description}>아직 생각중</p>
                 </div>
             </main>
 
