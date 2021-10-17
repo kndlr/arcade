@@ -1,0 +1,84 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    animation-duration: 0.5s;
+    animation-name: show;
+    opacity: 0;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        animation-play-state: paused;
+    }
+}
+
+.modal {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    gap: 2rem;
+}
+
+.modal svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d151f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+.link {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    box-shadow: 0 8px 24px hsla(210, 8%, 62%, 0.2);
+    color: #0d151f;
+    transition: all 0.25s ease;
+}
+
+.link:hover {
+    background-color: #0d151f;
+    border: 1px solid #0d151f;
+    color: #f8f9fa;
+}
